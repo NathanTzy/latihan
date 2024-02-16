@@ -19,16 +19,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/testing', function(){
-    return view('hello');
-});
-
-Route::get('/parent', function(){
-    return view('admin.parent');
-}
-);
-Route::resource('/about', AboutController::class);
-
-Route::get('/profile-index', [ProfileController::class,  'index'])->name('profileAwal');
-
 ?>
